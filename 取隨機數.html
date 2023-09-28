@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  // Math.ceil(Math.random()*100)
+  // Math.floor(Math.random()*100)+1
+  // document.write(Math.ceil(Math.random()*100)+'</br>')
+  // document.write(Math.floor(Math.random()*100)+1)
+
+  //   for (let i = 0; i<100; i++) {
+  //     console.log(Math.round(Math.random()*100))
+  //   }
+
+  const rand = (min, max) => {
+    //假設min=150 max=200，(200-150=50 * random)外頭包四捨五入取整數，再加回來min
+    return Math.round(Math.random() * (max - min)) + min
+  }
+
+  for (let i = 0; i<100; i++) {
+    console.log(rand(150,200))
+  }
+  </script>
+</body>
+</html>
